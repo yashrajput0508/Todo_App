@@ -41,7 +41,7 @@ const router = createBrowserRouter([
             { path: '*', Component: ErrorComponent }
         ]
     }
-]);
+],{basename:'/Todo_App'});
 
 function AuthenticatedRoute({children}) {
     const authContext = useAuth();
